@@ -1,16 +1,64 @@
-*{
-    margin: 0%;
+body, html {
+    height: 100%;
+    margin: 0;
     padding: 0%;
+    font-family: 'Quicksand', sans-serif;
+    color: #777;
+}
+head {
+    display: none;
+}
+.navbar-container1{
+    height:70px ;
+    position:fixed;
+    margin-top:0;
+    z-index: 70;
+}
 
+/* parallax */
+.parallax-1 {
+    background-image: url(../images/parallax1.jpg);
+    min-height: 100%;
 }
-.font-paw{
-    font-family: 'Quicksand', sans-serif;
+.parallax-2 {
+    background-image: url(../images/parallax2.jpg);
+    min-height: 400px;
 }
-.text-paw{
+.parallax-3 {
+    background-image: url(../images/parallax3.jpg);
+    min-height: 400px;
+}
+.parallax-1, .parallax-2, .parallax-3 {
+    position: relative;
+    /* opacity: 0.65; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    margin-bottom: 10px;
+    color: #000;
 }
+.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+div {
+    display: block;
+}
+/* /parallax */
+
+/* danos una pata */
 .align-center{
     display: flex;
     justify-content: center;
@@ -19,19 +67,27 @@
 .paw-tittle{
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
-.font-contact,
-.font-subscribe{
-    color: #fff;
+
+.navbar-text-parallax{
+    color:white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
     font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
 }
-.text-contact,
-.text-subscribe{
-    color: #fff;
-    text-align: center;
+.font-paw{
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 10px;
+}
+.paw{
+    margin: 20px;
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:20px;
+    padding-top: 70px;
+    margin-top: 30px;
 }
 .paw-accordion-tittle{
     background-color: #f8f8f8;
@@ -42,41 +98,10 @@
     align-items: center;
     font-family: 'Quicksand', sans-serif;
 }
-
-.navbar-container1{
-    height:70px ;
-}
-.navbar-text-parallax{
-    color:white;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    font-family: 'Quicksand', sans-serif;
-}
-/* .navbar-text-parallax{
-    opacity: 0.8;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 8px;
-    color: #000000;
-    background-color: #F3F3F3;
-} */
-
-.paw{
-    margin: 20px;
-}
-
-
 .paw-accordion{
     background:#f8f8f8;
     margin: 0;
     padding: 10px;
-}
-.paw-process-adoption{
-    display: grid;
-    grid-template-columns: repeat(7, minmax(100px, 293px));
-    margin-top: 20px;
-    border-radius: 5px;
 }
 .paw-process-apadrinar{
     display: grid;
@@ -84,12 +109,50 @@
     grid-gap: 10px;
     margin-top: 20px;
 }
-
 .paw-post{
     cursor: pointer;
     position: relative;
     align-self: center;
     justify-self: center;
+}
+
+.paw-image{
+    margin: 0;
+}
+.paw-image img{
+    width: 100%;
+}
+
+.paw-image-four1 img,
+.paw-image-four img{
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */
+    width: 15px;
+    height: 15px;
+}
+.paw-overlay{
+    background: rgba(0,0,0, .7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.paw-post:hover .paw-overlay{
+    display: flex;
+}
+
+.paw-commentary{
+    width: 90%;
+    margin: 5px;
+    font-size: 13px;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .paw-four{
@@ -108,47 +171,16 @@
     align-self: center;
     justify-self: left;
 }
-
-.paw-image{
-    margin: 0;
+.paw-process-adoption{
+    display: grid;
+    grid-template-columns: repeat(7, minmax(100px, 293px));
+    margin-top: 20px;
+    border-radius: 5px;
 }
-.paw-image img{
-    width: 100%;
-}
-
-.paw-image-four1 img,
-.paw-image-four img{
-    transform:rotate(90deg);
-    -ms-transform:rotate(90deg); /* IE 9 */
-    -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */
-    width: 15px;
-    height: 15px;
-}
-
-.paw-overlay{
-    background: rgba(0,0,0, .7);
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.text-paw{
     text-align: center;
-}
-.paw-post:hover .paw-overlay{
-    display: flex;
-}
-
-.paw-commentary{
-    width: 90%;
-    margin: 5px;
-    font-size: 13px;
-    text-align: center;
-    display: inline-block;
     font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
 }
 
 .form-container{
@@ -171,7 +203,6 @@
     border-radius: 10px;
     background-color: #e6e6e6;
 }
-
 .donation-image{
     width: 30%;
     margin-right: 50px;
@@ -182,9 +213,19 @@
     margin-left: 20px;
 }
 
+
+/* /danos una pata */
+
+/* apadrina */
+
 .apadrina{
     margin: 20px;
-    display: column;
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:20px;
+    padding-top: 70px;
+    margin-top: 30px;
 }
 .apadrina-container{
     padding-top: 30px;
@@ -193,58 +234,54 @@
     font-family: 'Quicksand', sans-serif;
     border-radius: 5px;
 }
+/* /apadrina */
 
+/* adopta */
 .adoption{
     margin: 20px;
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:20px;
+    padding-top: 70px;
+    margin-top: 30px;
 }
-.adoption-subcontainer{
-    margin: 10px;
-}
-.adoption-card-footer{
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .adoption-container{
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 30px;
     background-color: #f8f8f8;
     font-family: 'Quicksand', sans-serif;
     border-radius: 5px;
+    margin: 0;
+    
 }
-.adoption-grid{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(50%, 50%));
-    margin-top: 20px;
-    grid-gap:5px;
-}
-/* .card-container{
+.header-card{
     display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-.adoption-button{
-    border-radius: 10px;
-    background-color: #e6e6e6;
+    justify-items: baseline;
 }
-.adoption-button:hover{
-    /* background-color: #EBDEF0; */
-    background-color: #D3D3D3;
+.footer-card{
+    display: flex;
+    justify-items: baseline;
 }
+
+/* /adopta */
+
+/* subscribe */
 
 .subscribe{
-    width: 100%;
     background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
+    display: column;
+    text-align: center;
+    padding: 50px 80px;
+    padding-top: 100px;
 }
 
-.subscribe-container{
-    width: 100%;
-    padding: 30px;
-    border-radius: 30px; 
+.subscribe-container{    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
 }
 .subscribe-align{
     display: flex;
@@ -257,35 +294,53 @@
     width: 100%;
 }
 
-.div-inputs > button{
+.text-subscribe{
+    color: #fff;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px;
+}
+.subscribe-button{
     width: 50%;
     justify-content: center;
     margin: 20px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
 }
+.subscribe-button:hover{
+    border-radius: 10px;
+    color: #fff;
+}
+
+.tittle-secction-black{
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/* /subscribe */
+/* contact */
 
 .contact{
-    width: 100%;
     background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
+    display: column;
+    text-align: center;
+    padding: 50px 80px;
 }
-
 .contact-container{
-    width: 100%;
+    width: 70%;
     padding: 30px;
-    border-radius: 30px; 
-    border: 1px solid blue;
 }
 .row-contact{
-    border: 1px solid red;
+    
     display: flex;
     justify-content: center;
-
-    
 }
 .col-contact{
-    border: 1px solid pink;
     width: 50%;
 }
+.border-span{
+    margin-top: 0%;
+    align-items: flex-end;
+}
+/* /contact */
