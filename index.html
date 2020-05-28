@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
-  <body>
+  <body id="home">
     <div id="navbar" class="uk-position-relative">
       <div class="uk-position-top ">
           <nav class="uk-navbar-container navbar-container" uk-sticky="top:0" uk-navbar>
               <div class="uk-navbar-left">
                   <ul class="uk-navbar-nav" >
-                      <li><a href="index.html" uk-scroll><img src="assets/images/logo.png" width="60px"> </a></li>
+                      <li><a href="#home" uk-scroll><img src="assets/images/logo.png" width="60px"> </a></li>
                       <li><a href="#paw" uk-scroll>Danos una pata</a></li>
                       <li><a href="#apadrina" uk-scroll>Apadrinar</a></li>
                       <li><a href="#adoption" uk-scroll>Adopción</a></li>
@@ -42,159 +42,213 @@
         <li>
           <a class="uk-accordion-title paw-accordion-tittle" href="#">Proceso para ser un padrino</a>
           <div class="uk-accordion-content paw-accordion">
-            <div class="paw-process-apadrinar">
-              <div class="paw-post">
-                <figure class="paw-image">
-                  <img src="assets/images/paw5.jpg">
-                </figure>
-                <span class="paw-overlay">
-                  <p>
-                    <span class="paw-commentary">Llena el formulario que se encuentra en la foto
-                                  del perrito que deseas apadrinar.</span>
-                  </p>
-                </span>
-              </div>
-              <div class="paw-four">
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-              </div>
-              <div class="paw-post">
-                <figure class="paw-image">
-                  <img src="assets/images/paw6.jpg">
-                </figure>
-                <span class="paw-overlay">
-                  <p>
-                    <span class="paw-commentary">Te enviamos un email con la información para hacer los donativos
-                    </span>
-                  </p>
-                </span>
-              </div>
-              <div class="paw-four">
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-              </div>
-              <div class="paw-post">
-                <figure class="paw-image">
-                  <img src="assets/images/paw7.jpg">
-                </figure>
-                <span class="paw-overlay">
-                  <p>
-                    <span class="paw-commentary">Te enviamos evidencias</span>
-                  </p>
-                </span>
-              </div>
-            </div>                    
+            <div uk-grid>
+                <div class="uk-width-1-5@m">
+                    <div class="paw-post">
+                        <figure class="paw-image">
+                        <img src="assets/images/paw5.jpg">
+                        </figure>
+                        <span class="paw-overlay">
+                        <p>
+                            <span class="paw-commentary">Llena el formulario que se encuentra en la información
+                                        del perrito que deseas apadrinar.</span>
+                        </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="paw-post">
+                        <figure class="paw-image">
+                          <img src="assets/images/paw6.jpg">
+                        </figure>
+                        <span class="paw-overlay">
+                          <p>
+                            <span class="paw-commentary">Te enviamos un email con la información para hacer los donativos.
+                            </span>
+                          </p>
+                        </span>
+                      </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="paw-post">
+                        <figure class="paw-image">
+                          <img src="assets/images/paw7.jpg">
+                        </figure>
+                        <span class="paw-overlay">
+                          <p>
+                            <span class="paw-commentary">Te enviamos evidencias.</span>
+                          </p>
+                        </span>
+                      </div>
+                </div>
+            </div>  
           </div>
         </li>
         <li> 
           <a class="uk-accordion-title paw-accordion-tittle" href="#">Proceso de adopción</a>
           <div class="uk-accordion-content paw-accordion">
-            <div class="paw-process-adoption">
-              <div class="paw-post">
-                <figure class="paw-image">
-                  <img src="assets/images/paw1.jpg">
-                </figure>
-                <span class="paw-overlay">
-                  <p>
-                    <span class="paw-commentary">Llena el formulario que se encuentra en la foto
-                                  del perrito que deseas adoptar y poder programar una visita.</span>
-                  </p>
-                </span>
-              </div>
-              <div class="paw-four">
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-              </div>
-              <div class="paw-post">
-                <figure class="paw-image">
-                  <img src="assets/images/paw2.jpg">
-                </figure>
-                <span class="paw-overlay">
-                  <p>
-                    <span class="paw-commentary">Te visitamos para que me conozcas y ver nuestra
-                                  conexión al conocernos
-                    </span>
-                  </p>
-                </span>
-              </div>
-              <div class="paw-four">
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-              </div>
-              <div class="paw-post">
-                <figure class="paw-image">
-                  <img src="assets/images/paw3.jpg">
-                </figure>
-                <span class="paw-overlay">
-                  <p>
-                    <span class="paw-commentary">Documentamos la adopción y omenzamos una vida juntos</span>
-                  </p>
-                </span>
-              </div>
-              <div class="paw-four">
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four1">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-                <figure class="paw-image-four">
-                  <img src="assets/images/huella.svg">
-                </figure>
-              </div>
-              <div class="paw-post">
-                <figure class="paw-image">
-                  <img src="assets/images/paw4.jpg">
-                </figure>
-                <span class="paw-overlay">
-                  <p>
-                    <span class="paw-commentary">Después de la adopción se hará un seguimiento</span>
-                  </p>
-                </span>
-              </div>
+            <div uk-grid>
+                <div class="uk-width-1-5@m">
+                    <div class="paw-post">
+                        <figure class="paw-image">
+                            <img src="assets/images/paw1.jpg">
+                        </figure>
+                        <span class="paw-overlay">
+                            <p>
+                              <span class="paw-commentary">Llena el formulario que se encuentra en la foto
+                                            del perrito que deseas adoptar y poder programar una visita.</span>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="paw-post">
+                        <figure class="paw-image">
+                            <img src="assets/images/paw2.jpg">
+                        </figure>
+                        <span class="paw-overlay">
+                            <p>
+                              <span class="paw-commentary">Te visitamos para que lo conozcas y ver la
+                                            conexión al conocerce.
+                              </span>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="paw-post">
+                        <figure class="paw-image">
+                            <img src="assets/images/paw3.jpg">
+                        </figure>
+                        <span class="paw-overlay">
+                            <p>
+                              <span class="paw-commentary">Documentamos la adopción y comenzan una vida juntos.</span>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                    <div class="uk-width-2-2@s">
+                        <figure class="paw-image-four">
+                            <img src="assets/images/huella.svg">
+                        </figure>
+                    </div>
+                </div>
+                <div class="uk-width-1-5@m">
+                    <div class="paw-post">
+                        <figure class="paw-image">
+                            <img src="assets/images/paw4.jpg">
+                        </figure>
+                        <span class="paw-overlay">
+                            <p>
+                              <span class="paw-commentary">Después de la adopción se hará un seguimiento.</span>
+                            </p>
+                        </span>
+                    </div>
+                </div>
             </div>
           </div>
         </li>
@@ -209,13 +263,10 @@
             <form  class="form-container">
               <fieldset class="uk-fieldset font-paw  form-subcontainer ">
                 <div class="uk-margin ">
-                  <input class="uk-input input-style" type="text" placeholder="Nombre Completo">
+                  <input class="uk-input input-style" type="text" placeholder="Nombre">
                 </div>
-                <div class="uk-margin">
-                  <select class="uk-select input-style">
-                    <option>Femenino</option>
-                    <option>Masculino</option>
-                  </select>
+                <div class="uk-margin ">
+                    <input class="uk-input input-style" type="text" placeholder="Apellido">
                 </div>
                 <div class="uk-margin ">
                   <input class="uk-input input-style" type="text" placeholder="Dirección">
@@ -227,7 +278,7 @@
                   <input class="uk-input input-style" type="tel" placeholder="Teléfono Móvil">
                 </div>
                 <div class="uk-margin">
-                  <input class="uk-input input-style" type="text" placeholder="Profesión">
+                  <input class="uk-input input-style" type="text" placeholder="Ocupación">
                 </div>
                 <div class="uk-margin">
                   <textarea class="uk-textarea input-style" rows="5" placeholder="Escribe las razones por las cuales quieres ser rescatista"></textarea>
@@ -250,13 +301,10 @@
               <form  class="form-container">
                 <fieldset class="uk-fieldset font-paw  form-subcontainer ">
                   <div class="uk-margin ">
-                    <input class="uk-input input-style" type="text" placeholder="Nombre Completo">
+                    <input class="uk-input input-style" type="text" placeholder="Nombre">
                   </div>
-                  <div class="uk-margin">
-                    <select class="uk-select input-style">
-                      <option>Femenino</option>
-                      <option>Masculino</option>
-                    </select>
+                  <div class="uk-margin ">
+                    <input class="uk-input input-style" type="text" placeholder="Apellido">
                   </div>
                   <div class="uk-margin ">
                     <input class="uk-input input-style" type="text" placeholder="Dirección">
@@ -268,7 +316,10 @@
                     <input class="uk-input input-style" type="tel" placeholder="Teléfono Móvil">
                   </div>
                   <div class="uk-margin">
-                    <input class="uk-input input-style" type="text" placeholder="Profesión">
+                    <input class="uk-input input-style" type="text" placeholder="Ocupación">
+                  </div>
+                  <div class="uk-margin">
+                    <input class="uk-input input-style" type="number" placeholder="Número de días que brindarás hogar temporal">
                   </div>
                   <div class="uk-margin">
                     <input class="uk-input input-style" type="number" placeholder="¿Cúantos animales tienes en casa?">
@@ -326,30 +377,24 @@
       <div class="apadrina-container">
         <form  class="form-container">
           <fieldset class="uk-fieldset font-paw form-subcontainer ">
-            <div class="uk-margin ">
-              <input class="uk-input input-style" type="text" placeholder="Nombre Completo">
+            <div class="uk-margin">
+              <input class="uk-input input-style" type="text" placeholder="Nombre">
             </div>
             <div class="uk-margin">
-            <select class="uk-select input-style">
-              <option>Femenino</option>
-              <option>Masculino</option>
-            </select>
-              </div>
-              <div class="uk-margin">
-                <input class="uk-input input-style" type="email" placeholder="Correo Electrónico">
-              </div>
-              <div class="uk-margin">
-                <input class="uk-input input-style" type="tel" placeholder="Teléfono Móvil">
-              </div>
-              <div class="uk-margin ">
-                <input class="uk-input input-style" type="text" placeholder="Nombre del perro al que quieres apadrinar">
-              </div>
-              <div class="uk-margin">
-                <textarea class="uk-textarea input-style" rows="5" placeholder="Escribe las razones por las cuales quieres ayudar dando hogar temporal a los perritos"></textarea>
-              </div>
-              <div class="form-button">
-                <button class="uk-button uk-button-default  paw-button">Enviar</button>
-              </div>
+              <input class="uk-input input-style" type="text" placeholder="Apellido">
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input input-style" type="email" placeholder="Correo Electrónico">
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input input-style" type="tel" placeholder="Teléfono Móvil">
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input input-style" type="text" placeholder="Dirección">
+            </div>
+            <div class="uk-margin">
+              <input class="uk-input input-style" type="number" placeholder="Edad">
+            </div>
           </fieldset>
         </form>
       </div>
@@ -507,43 +552,52 @@
       <div id="my_adoption" uk-modal>
         <div class="uk-modal-dialog">
           <button class="uk-modal-close-default" type="button" uk-close></button>
-            <div class="uk-modal-header">
-                <h3 class="uk-modal-title paw-tittle">Adopta</h3>
-            </div>
-            <div class="uk-modal-body" uk-overflow-auto>
-              <form  class="form-container">
-                <fieldset class="uk-fieldset font-paw form-subcontainer">
-                  <div class="uk-margin">
-                    <input class="uk-input input-style" type="text" placeholder="Nombre Completo">
-                  </div>
-                    <div class="uk-margin">
-                      <input class="uk-input input-style" type="email" placeholder="Correo Electrónico">
-                    </div>
-                    <div class="uk-margin">
-                      <input class="uk-input input-style" type="tel" placeholder="Teléfono Móvil">
-                    </div>
-                    <div class="uk-margin">
-                      <input class="uk-input input-style" type="number" placeholder="¿Cuántos perros tienes en casa?">
-                    </div>
-                    <div class="uk-margin">
-                      <input class="uk-input input-style" type="text" placeholder="¿A qué te dedicas?">
-                    </div>
-                </fieldset>
-              </form>
-            </div>
-            <div class="uk-modal-footer uk-text-right">
-                <button class="uk-button uk-button-default paw-button uk-modal-close" type="button">Cancel</button>
-                <button class="uk-button uk-button-default paw-button" type="button">Enviar</button>
-            </div>
+          <div class="uk-modal-header">
+            <h3 class="uk-modal-title paw-tittle">Adopta</h3>
+          </div>
+          <div class="uk-modal-body" uk-overflow-auto>
+            <form  class="form-container">
+              <fieldset class="uk-fieldset font-paw form-subcontainer">
+                <div class="uk-margin">
+                  <input class="uk-input input-style" type="text" placeholder="Nombre">
+                </div>
+                <div class="uk-margin">
+                  <input class="uk-input input-style" type="text" placeholder="Apellido">
+                </div>
+                <div class="uk-margin">
+                  <input class="uk-input input-style" type="email" placeholder="Correo Electrónico">
+                </div>
+                <div class="uk-margin">
+                  <input class="uk-input input-style" type="tel" placeholder="Teléfono Móvil">
+                </div>
+                <div class="uk-margin">
+                  <input class="uk-input input-style" type="text" placeholder="Dirección">
+                </div>
+                <div class="uk-margin">
+                  <input class="uk-input input-style" type="number" placeholder="¿Cuántos perros tienes en casa?">
+                </div>
+                <div class="uk-margin">
+                  <input class="uk-input input-style" type="text" placeholder="Ocupación">
+                </div>
+                <div class="uk-margin">
+                  <textarea class="uk-textarea input-style" rows="5" placeholder="Escribe las razones por las cuales quieres ser rescatista"></textarea>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default paw-button uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-default paw-button" type="button">Enviar</button>
+          </div>
         </div>
       </div>
-      <!-- /modal -->
+    <!-- /modal -->
       </div>
     </section>
 
     <div class="parallax-1">
       <div class="caption">
-        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Acercate y recibe mas información</span>
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Acércate y recibe más información</span>
       </div>
     </div>
    
