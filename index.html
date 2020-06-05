@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body id="home">
-    <!-- <span class="uk-icon burguer-menu" uk-icon="icon: menu" ></span> -->
-    <div id="navbar" class="uk-position-relative">
-      <div class="uk-position-top ">
+    
+    <!-- <div id="navbar" class="uk-position-relative">
+      <div class="uk-position-top"> -->
           <nav class="uk-navbar-container navbar-container" uk-sticky="top:0" uk-navbar>
-              <div class="uk-navbar-left">
-                  <ul class="uk-navbar-nav" >
+              <!-- <div class="uk-navbar-left"> -->
+                  <ul class="uk-navbar-nav uk-visible@l">
                       <li><a href="index.html" uk-scroll><img src="assets/images/logo.png" width="60px"> </a></li>
                       <li><a href="#paw" uk-scroll>Danos una pata</a></li>
                       <li><a href="#apadrina" uk-scroll>Apadrinar</a></li>
@@ -23,9 +23,25 @@
                       <li><a href="#subscribe" uk-scroll>Suscribirse</a></li>
                       <li><a href="#contact" uk-scroll>Contacto</a></li>
                   </ul>
-              </div>
+                  <a href="#offcanvas-usage" class=" uk-icon burger-menu uk-hidden@l" uk-icon="icon: menu" uk-toggle></a>
+                  
+              <!-- </div> -->
           </nav>
-      </div>
+      <!-- </div>
+    </div>  -->
+
+    <div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+              <ul class="uk-nav">
+                <li><a href="index.html" uk-scroll><img src="assets/images/logo.png" width="60px"> </a></li>
+                <li><a href="#paw" uk-scroll>Danos una pata</a></li>
+                <li><a href="#apadrina" uk-scroll>Apadrinar</a></li>
+                <li><a href="#adoption" uk-scroll>Adopción</a></li>
+                <li><a href="#subscribe" uk-scroll>Suscribirse</a></li>
+                <li><a href="#contact" uk-scroll>Contacto</a></li>
+              </ul>
+        </div>
     </div>
 
     <div class="parallax-1">
@@ -653,9 +669,6 @@
           <a href="https://www.google.com.mx/maps/place/Plaza+Ju%C3%A1rez/@20.1231703,-98.7384592,17z/data=!3m1!4b1!4m5!3m4!1s0x85d109e526646a09:0xbefeb273f5dbf98c!8m2!3d20.1231703!4d-98.7362705" target="_blank" uk-icon="icon: location">Dirección </a>
         </div>
       </div>
-
-
-
       <!-- <div class="contact-container">
           <div class="row-contact">
             <div class="col-contact">
@@ -675,10 +688,6 @@
           </div>
       </div> -->
     </section>
-
-    
-
-
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
