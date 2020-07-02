@@ -9,12 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
-  <body>
-    <div id="navbar" class="uk-position-relative">
-      <div class="uk-position-top ">
+  <body id="home">
+    
+    <!-- <div id="navbar" class="uk-position-relative">
+      <div class="uk-position-top"> -->
           <nav class="uk-navbar-container navbar-container" uk-sticky="top:0" uk-navbar>
-              <div class="uk-navbar-left">
-                  <ul class="uk-navbar-nav" >
+              <!-- <div class="uk-navbar-left"> -->
+                  <ul class="uk-navbar-nav uk-visible@m">
                       <li><a href="index.html" uk-scroll><img src="assets/images/logo.png" width="60px"> </a></li>
                       <li><a href="index.html#paw" uk-scroll>Danos una pata</a></li>
                       <li><a href="index.html#apadrina" uk-scroll>Apadrinar</a></li>
@@ -22,11 +23,26 @@
                       <li><a href="#subscribe" uk-scroll>Suscribirse</a></li>
                       <li><a href="#contact" uk-scroll>Contacto</a></li>
                   </ul>
-              </div>
+                  <a href="#offcanvas-usage" class=" uk-icon burger-menu uk-hidden@m align-center" uk-icon="icon: menu; ratio: 2" uk-toggle></a>
+                  
+              <!-- </div> -->
           </nav>
-      </div>
-    </div>
+      <!-- </div>
+    </div>  -->
 
+    <div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+              <ul class="uk-nav">
+                <li><a href="index.htmlindex.html" uk-scroll><img src="assets/images/logo.png" width="60px"> </a></li>
+                <li><a href="index.html#paw" uk-scroll>Danos una pata</a></li>
+                <li><a href="index.html#apadrina" uk-scroll>Apadrinar</a></li>
+                <li><a href="index.html#adoption" uk-scroll>Adopción</a></li>
+                <li><a href="#subscribe" uk-scroll>Suscribirse</a></li>
+                <li><a href="#contact" uk-scroll>Contacto</a></li>
+              </ul>
+        </div>
+    </div>
   
     <div class="parallax-4">
       <div class="caption">
@@ -205,7 +221,27 @@
       <div class="align-center">
         <h2 class="tittle-secction-black" >Contacto</h2>
       </div>
-      <div class="contact-container">
+      <div class="uk-child-width-1-2@s uk-text-center " uk-grid>
+        <div>
+          <a href="https://www.facebook.com/Patas-En-Marcha-111804267180179/" target="_blank" uk-icon="icon: facebook">Facebook </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/patasenmarcha/" target="_blank" uk-icon="icon: instagram">Instagram </a>
+        </div>
+        <div>
+          <a href="https://twitter.com/bonnie_angeles" target="_blank" uk-icon="icon: twitter">Twitter </a>
+        </div>
+        <div>
+          <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" uk-icon="icon: mail">Correo Electrónico </a>
+        </div>
+        <div>
+          <a href="#" target="_blank" uk-icon="icon: whatsapp">WhatsApp </a>
+        </div>
+        <div>
+          <a href="https://www.google.com.mx/maps/place/Plaza+Ju%C3%A1rez/@20.1231703,-98.7384592,17z/data=!3m1!4b1!4m5!3m4!1s0x85d109e526646a09:0xbefeb273f5dbf98c!8m2!3d20.1231703!4d-98.7362705" target="_blank" uk-icon="icon: location">Dirección </a>
+        </div>
+      </div>
+      <!-- <div class="contact-container">
           <div class="row-contact">
             <div class="col-contact">
               <ul class="uk-iconnav uk-iconnav-vertical border-span ">
@@ -222,7 +258,7 @@
               </ul>
             </div>
           </div>
-      </div>
+      </div> -->
     </section>
 
     
