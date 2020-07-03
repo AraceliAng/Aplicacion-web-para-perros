@@ -14,15 +14,27 @@ head {
     margin-top:0;
     z-index: 70;
 }
+/* menu Responsive */
 .burger-menu{
    width: 70px;
    height: 70px;
 }
+
+.menuResponsive{
+    background-color: #f8f8f8;
+    color: #777;
+}
+.uk-offcanvas-bar a{
+    color: #777;
+}
+
 @media screen and (max-width: 767px) {
     .burger-button {
         display: block;
     }
 }  
+/* /menu Responsive */
+
 
 /* parallax */
 .parallax-1 {
@@ -365,6 +377,9 @@ div {
     margin-top: 0%;
     align-items: flex-end;
 }
+.contactClick div a:hover{
+    color: #777;
+}
 /* /contact */
 /* ver mas */
 .vermas{
@@ -391,3 +406,4 @@ div {
     margin:20px;
 }
 /* /ver mas */
+
