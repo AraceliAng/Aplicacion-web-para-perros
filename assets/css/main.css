@@ -407,3 +407,39 @@ div {
 }
 /* /ver mas */
 
+/* chat */
+.chatContainer{
+    /* border: 1px solid red; */
+    width: 260px;
+    height: 300px;
+    font-family: 'Quicksand', sans-serif;
+    margin: 10px;
+}
+#chat {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.bannerChat{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.form-container-chat{
+    width: 100%;
+}
+.form-subcontainer-chat{
+    width: 100%;    
+}
+
+.chat-button{
+    background-color: #e6e6e6;
+    width: 260px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* /chat */
